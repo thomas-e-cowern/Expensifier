@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import addExpensePage from '../components/AddExpense';
-import expenseDashboardPage from '../components/DashBoard';
+import expenseDashboardPage from '../components/Dashboard';
 import editExpensePage from '../components/EditExpense';
 import helpPage from '../components/Help';
 import notFoundPage from '../components/NotFound';
