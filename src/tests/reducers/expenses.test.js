@@ -47,12 +47,12 @@ test('should edit an expense', () => {
     const action = {
         type: "EDIT_EXPENSE",
         id: expenses[1].id,
-        upates: {
+        updates: {
             amount
         }
     };
     const state = expensesReducer(expenses, action);
-    expect(state[1].amount).toEqual(amount);
+    expect(state[1].amount).toBe(amount);
 });
 
 test('should not edit an expense with bad id', () => {
