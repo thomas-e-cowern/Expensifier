@@ -1,30 +1,30 @@
 import uuid from 'uuid';
 import expense from '../tests/fixtures/expenses';
-//import database from '../firebase/firebase';
+import database from '../firebase/firebase';
 
 
 // Add Expense Action
-//export const addExpense = (expense) => ({
-//    type: 'ADD_EXPENSE',
-//    expense
-//});
-
-export const addExpense = (
-    {
-        description = '',
-        note = '',
-        amount = 0,
-        createdAt = 0
-    } = {}
-    ) => ({
+export const addExpense = (expense) => ({
     type: 'ADD_EXPENSE',
-    expense: {
-        description ,
-        note,
-        amount,
-        createdAt
-    }
+    expense
 });
+
+//export const addExpense = (
+//    {
+//        description = '',
+//        note = '',
+//        amount = 0,
+//        createdAt = 0
+//    } = {}
+//    ) => ({
+//    type: 'ADD_EXPENSE',
+//    expense: {
+//        description ,
+//        note,
+//        amount,
+//        createdAt
+//    }
+//});
 
 export const startAddExpense = (expenseData = {}) => {
   return (dispatch) => {
