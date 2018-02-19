@@ -11,21 +11,19 @@ exports[`Should render header correctly 1`] = `
     exact={true}
     to="/"
   >
-    Go to Home Page  
+    Dashboard  
   </NavLink>
   <NavLink
     activeClassName="is-active"
     ariaCurrent="true"
     to="/create"
   >
-    Go to Create Page  
+    Create Expense  
   </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    ariaCurrent="true"
-    to="/help"
+  <button
+    onClick={[Function]}
   >
-    Go to Help Page  
-  </NavLink>
+    Logout
+  </button>
 </header>
 `;
